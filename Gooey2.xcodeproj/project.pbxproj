@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D1EE16CC1A95205A008A5CEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EE16CB1A95205A008A5CEC /* AppDelegate.swift */; };
+		D1EE16CE1A95205A008A5CEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EE16CD1A95205A008A5CEC /* ViewController.swift */; };
+		D1EE16D11A95205A008A5CEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1EE16CF1A95205A008A5CEC /* Main.storyboard */; };
+		D1EE16D31A95205A008A5CEC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1EE16D21A95205A008A5CEC /* Images.xcassets */; };
+		D1EE16D61A95205A008A5CEC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1EE16D41A95205A008A5CEC /* LaunchScreen.xib */; };
+		D1EE16E21A95205A008A5CEC /* Gooey2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EE16E11A95205A008A5CEC /* Gooey2Tests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D1EE16DC1A95205A008A5CEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D1EE16BE1A95205A008A5CEC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D1EE16C51A95205A008A5CEC;
+			remoteInfo = Gooey2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D1EE16C61A95205A008A5CEC /* Gooey2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gooey2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1EE16CA1A95205A008A5CEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1EE16CB1A95205A008A5CEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D1EE16CD1A95205A008A5CEC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D1EE16D01A95205A008A5CEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D1EE16D21A95205A008A5CEC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D1EE16D51A95205A008A5CEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		D1EE16DB1A95205A008A5CEC /* Gooey2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Gooey2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1EE16E01A95205A008A5CEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1EE16E11A95205A008A5CEC /* Gooey2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gooey2Tests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D1EE16C31A95205A008A5CEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1EE16D81A95205A008A5CEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D1EE16BD1A95205A008A5CEC = {
+			isa = PBXGroup;
+			children = (
+				D1EE16C81A95205A008A5CEC /* Gooey2 */,
+				D1EE16DE1A95205A008A5CEC /* Gooey2Tests */,
+				D1EE16C71A95205A008A5CEC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D1EE16C71A95205A008A5CEC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D1EE16C61A95205A008A5CEC /* Gooey2.app */,
+				D1EE16DB1A95205A008A5CEC /* Gooey2Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D1EE16C81A95205A008A5CEC /* Gooey2 */ = {
+			isa = PBXGroup;
+			children = (
+				D1EE16CB1A95205A008A5CEC /* AppDelegate.swift */,
+				D1EE16CD1A95205A008A5CEC /* ViewController.swift */,
+				D1EE16CF1A95205A008A5CEC /* Main.storyboard */,
+				D1EE16D21A95205A008A5CEC /* Images.xcassets */,
+				D1EE16D41A95205A008A5CEC /* LaunchScreen.xib */,
+				D1EE16C91A95205A008A5CEC /* Supporting Files */,
+			);
+			path = Gooey2;
+			sourceTree = "<group>";
+		};
+		D1EE16C91A95205A008A5CEC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D1EE16CA1A95205A008A5CEC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D1EE16DE1A95205A008A5CEC /* Gooey2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				D1EE16E11A95205A008A5CEC /* Gooey2Tests.swift */,
+				D1EE16DF1A95205A008A5CEC /* Supporting Files */,
+			);
+			path = Gooey2Tests;
+			sourceTree = "<group>";
+		};
+		D1EE16DF1A95205A008A5CEC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D1EE16E01A95205A008A5CEC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D1EE16C51A95205A008A5CEC /* Gooey2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1EE16E51A95205A008A5CEC /* Build configuration list for PBXNativeTarget "Gooey2" */;
+			buildPhases = (
+				D1EE16C21A95205A008A5CEC /* Sources */,
+				D1EE16C31A95205A008A5CEC /* Frameworks */,
+				D1EE16C41A95205A008A5CEC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Gooey2;
+			productName = Gooey2;
+			productReference = D1EE16C61A95205A008A5CEC /* Gooey2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D1EE16DA1A95205A008A5CEC /* Gooey2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1EE16E81A95205A008A5CEC /* Build configuration list for PBXNativeTarget "Gooey2Tests" */;
+			buildPhases = (
+				D1EE16D71A95205A008A5CEC /* Sources */,
+				D1EE16D81A95205A008A5CEC /* Frameworks */,
+				D1EE16D91A95205A008A5CEC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D1EE16DD1A95205A008A5CEC /* PBXTargetDependency */,
+			);
+			name = Gooey2Tests;
+			productName = Gooey2Tests;
+			productReference = D1EE16DB1A95205A008A5CEC /* Gooey2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D1EE16BE1A95205A008A5CEC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Pål Forsberg";
+				TargetAttributes = {
+					D1EE16C51A95205A008A5CEC = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					D1EE16DA1A95205A008A5CEC = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = D1EE16C51A95205A008A5CEC;
+					};
+				};
+			};
+			buildConfigurationList = D1EE16C11A95205A008A5CEC /* Build configuration list for PBXProject "Gooey2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D1EE16BD1A95205A008A5CEC;
+			productRefGroup = D1EE16C71A95205A008A5CEC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D1EE16C51A95205A008A5CEC /* Gooey2 */,
+				D1EE16DA1A95205A008A5CEC /* Gooey2Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D1EE16C41A95205A008A5CEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1EE16D11A95205A008A5CEC /* Main.storyboard in Resources */,
+				D1EE16D61A95205A008A5CEC /* LaunchScreen.xib in Resources */,
+				D1EE16D31A95205A008A5CEC /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1EE16D91A95205A008A5CEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D1EE16C21A95205A008A5CEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1EE16CE1A95205A008A5CEC /* ViewController.swift in Sources */,
+				D1EE16CC1A95205A008A5CEC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1EE16D71A95205A008A5CEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1EE16E21A95205A008A5CEC /* Gooey2Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D1EE16DD1A95205A008A5CEC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D1EE16C51A95205A008A5CEC /* Gooey2 */;
+			targetProxy = D1EE16DC1A95205A008A5CEC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D1EE16CF1A95205A008A5CEC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D1EE16D01A95205A008A5CEC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D1EE16D41A95205A008A5CEC /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D1EE16D51A95205A008A5CEC /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D1EE16E31A95205A008A5CEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D1EE16E41A95205A008A5CEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D1EE16E61A95205A008A5CEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Gooey2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D1EE16E71A95205A008A5CEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Gooey2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D1EE16E91A95205A008A5CEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Gooey2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gooey2.app/Gooey2";
+			};
+			name = Debug;
+		};
+		D1EE16EA1A95205A008A5CEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Gooey2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gooey2.app/Gooey2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D1EE16C11A95205A008A5CEC /* Build configuration list for PBXProject "Gooey2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1EE16E31A95205A008A5CEC /* Debug */,
+				D1EE16E41A95205A008A5CEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1EE16E51A95205A008A5CEC /* Build configuration list for PBXNativeTarget "Gooey2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1EE16E61A95205A008A5CEC /* Debug */,
+				D1EE16E71A95205A008A5CEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D1EE16E81A95205A008A5CEC /* Build configuration list for PBXNativeTarget "Gooey2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1EE16E91A95205A008A5CEC /* Debug */,
+				D1EE16EA1A95205A008A5CEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D1EE16BE1A95205A008A5CEC /* Project object */;
+}
