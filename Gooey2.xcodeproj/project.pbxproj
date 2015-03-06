@@ -41,6 +41,7 @@
 		D17592F11AA33579003C7B3B /* pattern.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pattern.png; path = ../../../Desktop/pattern.png; sourceTree = "<group>"; };
 		D1D8E9CD1A96388600C88387 /* BridgeLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BridgeLayer.swift; sourceTree = "<group>"; };
 		D1D8E9CF1A97942900C88387 /* Vectors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vectors.swift; sourceTree = "<group>"; };
+		D1E6C2931AA993B800A1964D /* Gooey.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Gooey.mp4; sourceTree = "<group>"; };
 		D1EE16C61A95205A008A5CEC /* Gooey2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gooey2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1EE16CA1A95205A008A5CEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D1EE16CB1A95205A008A5CEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -108,6 +109,7 @@
 				D1EE16D21A95205A008A5CEC /* Images.xcassets */,
 				D17592F11AA33579003C7B3B /* pattern.png */,
 				D104B4AE1AA474BA00803E16 /* p@2x.png */,
+				D1E6C2931AA993B800A1964D /* Gooey.mp4 */,
 				D1EE16D41A95205A008A5CEC /* LaunchScreen.xib */,
 				D1EE16C91A95205A008A5CEC /* Supporting Files */,
 			);
