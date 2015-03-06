@@ -7,12 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D104B4AD1AA44BAB00803E16 /* GooeyItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D104B4AC1AA44BAB00803E16 /* GooeyItem.swift */; };
+		D104B4AF1AA474BA00803E16 /* p@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D104B4AE1AA474BA00803E16 /* p@2x.png */; };
+		D1553FE21AA1B2A0005446EC /* Cross.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1553FE11AA1B2A0005446EC /* Cross.swift */; };
+		D17592F21AA33579003C7B3B /* pattern.png in Resources */ = {isa = PBXBuildFile; fileRef = D17592F11AA33579003C7B3B /* pattern.png */; };
+		D1D8E9CE1A96388600C88387 /* BridgeLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D8E9CD1A96388600C88387 /* BridgeLayer.swift */; };
+		D1D8E9D01A97942900C88387 /* Vectors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D8E9CF1A97942900C88387 /* Vectors.swift */; };
 		D1EE16CC1A95205A008A5CEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EE16CB1A95205A008A5CEC /* AppDelegate.swift */; };
 		D1EE16CE1A95205A008A5CEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EE16CD1A95205A008A5CEC /* ViewController.swift */; };
 		D1EE16D11A95205A008A5CEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1EE16CF1A95205A008A5CEC /* Main.storyboard */; };
 		D1EE16D31A95205A008A5CEC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1EE16D21A95205A008A5CEC /* Images.xcassets */; };
 		D1EE16D61A95205A008A5CEC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1EE16D41A95205A008A5CEC /* LaunchScreen.xib */; };
 		D1EE16E21A95205A008A5CEC /* Gooey2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EE16E11A95205A008A5CEC /* Gooey2Tests.swift */; };
+		D1EE16EC1A95206A008A5CEC /* Gooey.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EE16EB1A95206A008A5CEC /* Gooey.swift */; };
+		D1EE16EE1A952225008A5CEC /* GooeyLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EE16ED1A952225008A5CEC /* GooeyLayer.swift */; };
+		D1EE16F01A952C69008A5CEC /* SpringAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EE16EF1A952C69008A5CEC /* SpringAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +35,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D104B4AC1AA44BAB00803E16 /* GooeyItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GooeyItem.swift; sourceTree = "<group>"; };
+		D104B4AE1AA474BA00803E16 /* p@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "p@2x.png"; path = "../../../Desktop/p@2x.png"; sourceTree = "<group>"; };
+		D1553FE11AA1B2A0005446EC /* Cross.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cross.swift; sourceTree = "<group>"; };
+		D17592F11AA33579003C7B3B /* pattern.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pattern.png; path = ../../../Desktop/pattern.png; sourceTree = "<group>"; };
+		D1D8E9CD1A96388600C88387 /* BridgeLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BridgeLayer.swift; sourceTree = "<group>"; };
+		D1D8E9CF1A97942900C88387 /* Vectors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vectors.swift; sourceTree = "<group>"; };
 		D1EE16C61A95205A008A5CEC /* Gooey2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gooey2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1EE16CA1A95205A008A5CEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D1EE16CB1A95205A008A5CEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +51,9 @@
 		D1EE16DB1A95205A008A5CEC /* Gooey2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Gooey2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1EE16E01A95205A008A5CEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D1EE16E11A95205A008A5CEC /* Gooey2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gooey2Tests.swift; sourceTree = "<group>"; };
+		D1EE16EB1A95206A008A5CEC /* Gooey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Gooey.swift; path = ../Gooey.swift; sourceTree = "<group>"; };
+		D1EE16ED1A952225008A5CEC /* GooeyLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GooeyLayer.swift; sourceTree = "<group>"; };
+		D1EE16EF1A952C69008A5CEC /* SpringAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,8 +97,17 @@
 			children = (
 				D1EE16CB1A95205A008A5CEC /* AppDelegate.swift */,
 				D1EE16CD1A95205A008A5CEC /* ViewController.swift */,
+				D1EE16EB1A95206A008A5CEC /* Gooey.swift */,
+				D104B4AC1AA44BAB00803E16 /* GooeyItem.swift */,
+				D1D8E9CD1A96388600C88387 /* BridgeLayer.swift */,
+				D1EE16ED1A952225008A5CEC /* GooeyLayer.swift */,
+				D1EE16EF1A952C69008A5CEC /* SpringAnimation.swift */,
+				D1D8E9CF1A97942900C88387 /* Vectors.swift */,
+				D1553FE11AA1B2A0005446EC /* Cross.swift */,
 				D1EE16CF1A95205A008A5CEC /* Main.storyboard */,
 				D1EE16D21A95205A008A5CEC /* Images.xcassets */,
+				D17592F11AA33579003C7B3B /* pattern.png */,
+				D104B4AE1AA474BA00803E16 /* p@2x.png */,
 				D1EE16D41A95205A008A5CEC /* LaunchScreen.xib */,
 				D1EE16C91A95205A008A5CEC /* Supporting Files */,
 			);
@@ -192,6 +219,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D17592F21AA33579003C7B3B /* pattern.png in Resources */,
+				D104B4AF1AA474BA00803E16 /* p@2x.png in Resources */,
 				D1EE16D11A95205A008A5CEC /* Main.storyboard in Resources */,
 				D1EE16D61A95205A008A5CEC /* LaunchScreen.xib in Resources */,
 				D1EE16D31A95205A008A5CEC /* Images.xcassets in Resources */,
@@ -212,8 +241,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1553FE21AA1B2A0005446EC /* Cross.swift in Sources */,
+				D1EE16EC1A95206A008A5CEC /* Gooey.swift in Sources */,
 				D1EE16CE1A95205A008A5CEC /* ViewController.swift in Sources */,
+				D1EE16F01A952C69008A5CEC /* SpringAnimation.swift in Sources */,
+				D104B4AD1AA44BAB00803E16 /* GooeyItem.swift in Sources */,
+				D1D8E9D01A97942900C88387 /* Vectors.swift in Sources */,
 				D1EE16CC1A95205A008A5CEC /* AppDelegate.swift in Sources */,
+				D1D8E9CE1A96388600C88387 /* BridgeLayer.swift in Sources */,
+				D1EE16EE1A952225008A5CEC /* GooeyLayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +441,7 @@
 				D1EE16E71A95205A008A5CEC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D1EE16E81A95205A008A5CEC /* Build configuration list for PBXNativeTarget "Gooey2Tests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +450,7 @@
 				D1EE16EA1A95205A008A5CEC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
