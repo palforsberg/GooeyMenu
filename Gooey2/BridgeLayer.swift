@@ -106,7 +106,7 @@ class BridgeLayer: CALayer {
         let height : CGFloat = 78 - 22
         let rect = CGRect(x: self.frame.origin.x, y:(22+(height * (1-percent))), width: 60, height: percent * (height))
         let path = CGPathCreateMutable()
-        let curve : CGFloat = 3//MIN(6, v2: rect.size.height)
+        let curve : CGFloat = 3
         let inset : CGFloat = (rect.size.width-ballsize)/CGFloat(2)
         let curveInset = inset-15
         let p : CGFloat = percent

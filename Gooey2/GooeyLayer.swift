@@ -246,12 +246,5 @@ class GooeyLayer: CALayer{
         CGPathCloseSubpath(path)
         return path
     }
-    
-
 }
 
-//        return [
-//            CGVector(dx: -15, dy: -9),
-//            CGVector(dx: 0, dy: 0),
-//            CGVector(dx: 0, dy: 0),
-//            CGVector(dx: -8, dy: -8)]
