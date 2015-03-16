@@ -106,29 +106,32 @@ class BridgeLayer: CALayer {
         let height : CGFloat = 78 - 22
         let rect = CGRect(x: self.frame.origin.x, y:(22+(height * (1-percent))), width: 60, height: percent * (height))
         let path = CGPathCreateMutable()
-        let curve : CGFloat = 3
         let inset : CGFloat = (rect.size.width-ballsize)/CGFloat(2)
-        let curveInset = inset-15
-        let p : CGFloat = percent
         
-        let distCurvePoint     : CGFloat = 30
-        let travelCurvePoint   : CGFloat = distCurvePoint * p
-        let newCurveInset      : CGFloat = MAX(curveInset + travelCurvePoint, v2:inset)
+   
         
         let p1 = CGPoint(x: inset,                               y: rect.origin.y)
 
         CGPathMoveToPoint(path, nil, p1.x, p1.y)
         CGPathAddEllipseInRect(path, nil, CGRect(x: p1.x, y: p1.y-22, width: ballsize, height: ballsize))
         
-        if(percent < 0.84 && percent > 0){
+        if(percent < 0.82 && percent > 0){
             //  p1------p2
             //   p6    p3
             //p5__________p4
+            let curve : CGFloat = 3
+            let curveInset : CGFloat = 0
+            let p : CGFloat = percent
+            let distCurvePoint     : CGFloat = 23 //Distance the middple point (p3, p6) should travel inwards.
+            let travelCurvePoint   : CGFloat = distCurvePoint * p
+            let newCurveInset      : CGFloat = travelCurvePoint // MAX(curveInset + travelCurvePoint, v2:inset)
+
+            
             let p2 = CGPoint(x: rect.size.width - inset ,            y: rect.origin.y)
-            let p3 = CGPoint(x: rect.size.width - newCurveInset,     y: rect.size.height * 0.50 + rect.origin.y)
+            let p3 = CGPoint(x: rect.size.width - newCurveInset,     y: rect.size.height * 0.55 + rect.origin.y)
             let p4 = CGPoint(x: rect.size.width,                     y: rect.size.height + rect.origin.y)
             let p5 = CGPoint(x: 0,                                   y: rect.size.height + rect.origin.y)
-            let p6 = CGPoint(x: newCurveInset,                       y: rect.size.height * 0.50 + rect.origin.y)
+            let p6 = CGPoint(x: newCurveInset,                       y: rect.size.height * 0.55 + rect.origin.y)
             CGPathMoveToPoint(path, nil, p2.x, p2.y)
             
             CGPathAddCurveToPoint(path, nil, p2.x, p2.y, p3.x, p3.y - curve, p3.x, p3.y)

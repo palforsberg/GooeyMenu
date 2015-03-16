@@ -141,8 +141,8 @@ class Gooey : UIView, GooeyItemDelegate{
         
         gooeyImage.animate(45, fromangle:0, duration: duration*2)
         
-        let out1 = gooey.getAnimation(duration*2.1, direction: Direction.LeftOut, type: Animation.Calm)
-        let out2 = gooey.getAnimation(duration*2.1, direction: Direction.RightOut, type: Animation.Calm)
+        let out1 = gooey.getAnimation(duration*2.5, direction: Direction.LeftOut, type: Animation.Calm)
+        let out2 = gooey.getAnimation(duration*2.5, direction: Direction.RightOut, type: Animation.Calm)
         let in1 = gooey.getAnimation(duration * 8, direction: Direction.Back, type: Animation.Gooey)
         gooey.animateGroup([out1, out2, in1])
     }
@@ -160,7 +160,7 @@ class Gooey : UIView, GooeyItemDelegate{
         
         let out1 = gooey.getAnimation(duration * 3.0, direction: Direction.RightOut, type: Animation.Calm)
         let out2 = gooey.getAnimation(duration * 2.1, direction: Direction.LeftOut, type: Animation.Calm)
-        let in1 = gooey.getAnimation(duration * 10, direction: Direction.Back, type: Animation.Gooey)
+        let in1 = gooey.getAnimation(duration * 8, direction: Direction.Back, type: Animation.Gooey)
         gooey.animateGroup([out1, out2, in1])
     }
     
