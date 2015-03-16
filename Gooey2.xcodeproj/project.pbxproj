@@ -8,9 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		D104B4AD1AA44BAB00803E16 /* GooeyItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D104B4AC1AA44BAB00803E16 /* GooeyItem.swift */; };
-		D104B4AF1AA474BA00803E16 /* p@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D104B4AE1AA474BA00803E16 /* p@2x.png */; };
 		D1553FE21AA1B2A0005446EC /* Cross.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1553FE11AA1B2A0005446EC /* Cross.swift */; };
-		D17592F21AA33579003C7B3B /* pattern.png in Resources */ = {isa = PBXBuildFile; fileRef = D17592F11AA33579003C7B3B /* pattern.png */; };
+		D1D164391AB6EE220084696E /* p@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D1D164381AB6EE220084696E /* p@2x.png */; };
 		D1D8E9CE1A96388600C88387 /* BridgeLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D8E9CD1A96388600C88387 /* BridgeLayer.swift */; };
 		D1D8E9D01A97942900C88387 /* Vectors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D8E9CF1A97942900C88387 /* Vectors.swift */; };
 		D1EE16CC1A95205A008A5CEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EE16CB1A95205A008A5CEC /* AppDelegate.swift */; };
@@ -36,12 +35,10 @@
 
 /* Begin PBXFileReference section */
 		D104B4AC1AA44BAB00803E16 /* GooeyItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GooeyItem.swift; sourceTree = "<group>"; };
-		D104B4AE1AA474BA00803E16 /* p@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "p@2x.png"; path = "../../../Desktop/p@2x.png"; sourceTree = "<group>"; };
 		D1553FE11AA1B2A0005446EC /* Cross.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cross.swift; sourceTree = "<group>"; };
-		D17592F11AA33579003C7B3B /* pattern.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pattern.png; path = ../../../Desktop/pattern.png; sourceTree = "<group>"; };
+		D1D164381AB6EE220084696E /* p@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "p@2x.png"; path = "../../../appar/Gooey2/Bilder/p@2x.png"; sourceTree = "<group>"; };
 		D1D8E9CD1A96388600C88387 /* BridgeLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BridgeLayer.swift; sourceTree = "<group>"; };
 		D1D8E9CF1A97942900C88387 /* Vectors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vectors.swift; sourceTree = "<group>"; };
-		D1E6C2931AA993B800A1964D /* Gooey.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Gooey.mp4; sourceTree = "<group>"; };
 		D1EE16C61A95205A008A5CEC /* Gooey2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gooey2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1EE16CA1A95205A008A5CEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D1EE16CB1A95205A008A5CEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -107,10 +104,8 @@
 				D1553FE11AA1B2A0005446EC /* Cross.swift */,
 				D1EE16CF1A95205A008A5CEC /* Main.storyboard */,
 				D1EE16D21A95205A008A5CEC /* Images.xcassets */,
-				D17592F11AA33579003C7B3B /* pattern.png */,
-				D104B4AE1AA474BA00803E16 /* p@2x.png */,
-				D1E6C2931AA993B800A1964D /* Gooey.mp4 */,
 				D1EE16D41A95205A008A5CEC /* LaunchScreen.xib */,
+				D1D164381AB6EE220084696E /* p@2x.png */,
 				D1EE16C91A95205A008A5CEC /* Supporting Files */,
 			);
 			path = Gooey2;
@@ -221,9 +216,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D17592F21AA33579003C7B3B /* pattern.png in Resources */,
-				D104B4AF1AA474BA00803E16 /* p@2x.png in Resources */,
 				D1EE16D11A95205A008A5CEC /* Main.storyboard in Resources */,
+				D1D164391AB6EE220084696E /* p@2x.png in Resources */,
 				D1EE16D61A95205A008A5CEC /* LaunchScreen.xib in Resources */,
 				D1EE16D31A95205A008A5CEC /* Images.xcassets in Resources */,
 			);
