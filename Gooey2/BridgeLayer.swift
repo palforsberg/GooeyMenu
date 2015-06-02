@@ -13,7 +13,7 @@ class BridgeLayer: CALayer {
     override init!(layer: AnyObject!) {
         if layer is BridgeLayer{
             color = layer.color
-            image = (layer as BridgeLayer).image
+            image = (layer as! BridgeLayer).image
             
         }
         percent = layer.percent
@@ -62,7 +62,7 @@ class BridgeLayer: CALayer {
         
     }
     
-    func animate(duration1 : Double, duration2: Double, delay : Double, from : CGFloat, to : CGFloat, timing1 : NSString, timing2 : NSString){
+    func animate(duration1 : Double, duration2: Double, delay : Double, from : CGFloat, to : CGFloat, timing1 : String, timing2 : String){
         
 
         let breakpoint = 0.78
@@ -84,8 +84,8 @@ class BridgeLayer: CALayer {
     
     override func animationDidStop(anim: CAAnimation!, finished flag: Bool) {
         self.removeAllAnimations()
-        let a : CABasicAnimation = anim as CABasicAnimation
-        self.percent = a.toValue as CGFloat
+        let a : CABasicAnimation = anim as! CABasicAnimation
+        self.percent = a.toValue as! CGFloat
         
     }
     

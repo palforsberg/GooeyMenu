@@ -20,6 +20,7 @@ class ViewController: UIViewController, GooeyDelegate {
         self.view.addSubview(gooey)
     
         
+//        let slider = UISlider(frame: CGRect(x: 20, y: 300, width: 280, height: 40))
         let slider = UISlider(frame: CGRect(x: 20, y: 300, width: 280, height: 40))
         slider.addTarget(self, action: "update:", forControlEvents: UIControlEvents.ValueChanged)
         self.view.addSubview(slider)

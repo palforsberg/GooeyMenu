@@ -8,7 +8,7 @@
 
 import UIKit
 
-class VectorsFunc : NSObject{
+class VectorsFunc {
     
     class func plus(v1 : Vectors, v2 : Vectors)->Vectors{
         let d1 = CGVector(dx:v1.0.dx + v2.0.dx, dy:v1.0.dy + v2.0.dy)

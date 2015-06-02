@@ -39,10 +39,10 @@ class GooeyLayer: CALayer{
 
     override init!(layer: AnyObject!) {
         if(layer.isKindOfClass(GooeyLayer)){
-            self.nextVectors = (layer as GooeyLayer).nextVectors
-            self.color = (layer as GooeyLayer).color
-            self.currentVectors = (layer as GooeyLayer).currentVectors
-            self.insets = (layer as GooeyLayer).insets
+            self.nextVectors = (layer as! GooeyLayer).nextVectors
+            self.color = (layer as! GooeyLayer).color
+            self.currentVectors = (layer as! GooeyLayer).currentVectors
+            self.insets = (layer as! GooeyLayer).insets
         } else{
             nextVectors = VectorsFunc.zero()
             self.color = UIColor.redColor().CGColor
@@ -68,9 +68,9 @@ class GooeyLayer: CALayer{
     
     @NSManaged var xpercent : CGFloat
     
-    private var currentVectors : Vectors
-    private var nextVectors : Vectors
-    private var animationQueue : [GooAnimation] = [GooAnimation]()
+    var currentVectors : Vectors
+     var nextVectors : Vectors
+     var animationQueue : [GooAnimation] = [GooAnimation]()
     
     var animating = false
     let size : CGFloat = 82
