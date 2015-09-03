@@ -10,22 +10,8 @@ import UIKit
 
 enum Direction {
     case Back
-//    case TopOut
-//    case TopIn
-//    case TopRightOut
-//    case TopRightIn
     case RightOut
-//    case RightIn
-//    case BottomRightOut
-//    case BottomRightIn
-//    case BottomOut
-//    case BottomIn
-//    case BottomLeftOut
-//    case BottomLeftIn
     case LeftOut
-//    case LeftIn
-//    case TopLeftOut
-//    case TopLeftIn
 }
 enum Animation {
     case Calm
@@ -37,7 +23,7 @@ typealias GooAnimation = (CAAnimation, Vectors)
 
 class GooeyLayer: CALayer{
 
-    override init!(layer: AnyObject!) {
+    override init(layer: AnyObject) {
         if(layer.isKindOfClass(GooeyLayer)){
             self.nextVectors = (layer as! GooeyLayer).nextVectors
             self.color = (layer as! GooeyLayer).color
@@ -51,14 +37,14 @@ class GooeyLayer: CALayer{
         super.init(layer: layer)
     }
     
-    override init!() {
+    override init() {
 
         self.nextVectors = VectorsFunc.zero()
         self.currentVectors = VectorsFunc.zero()
         super.init()
         
     }
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
 
         self.nextVectors = VectorsFunc.zero()
         self.currentVectors = VectorsFunc.zero()
@@ -85,7 +71,7 @@ class GooeyLayer: CALayer{
         }
     }
     
-    override class func needsDisplayForKey(key: String!) -> Bool {
+    override class func needsDisplayForKey(key: String) -> Bool {
         if (key == "xpercent") {
             return true
         }
@@ -100,8 +86,6 @@ class GooeyLayer: CALayer{
             return leftOutVectors()
         case Direction.RightOut:
             return rightOutVectors()
-        default :
-            return VectorsFunc.zero()
         }
     }
     
@@ -154,7 +138,7 @@ class GooeyLayer: CALayer{
         self.nextVectors = VectorsFunc.zero()
     }
     
-    override func animationDidStop(anim: CAAnimation!, finished flag: Bool) {
+    override func animationDidStop(anim: CAAnimation, finished flag: Bool) {
 
         doneAnimating()
         applyNexAnimation()
@@ -174,7 +158,7 @@ class GooeyLayer: CALayer{
         self.addAnimation(gooani!.0, forKey: "animation eeoo")
     }
     
-    override func drawInContext(ctx: CGContext!) {
+    override func drawInContext(ctx: CGContext) {
         let insets_ = insets == nil ? 0 : insets!
         let rect = CGRect(x: insets_, y: insets_, width: self.bounds.size.width - insets_ * 2, height: self.bounds.size.height - insets_ * 2)
         let curve : CGFloat = rect.size.width/3.6
@@ -198,7 +182,7 @@ class GooeyLayer: CALayer{
 
     
     func circleDistortPath(rect : CGRect, curve : CGFloat, d1 : CGVector, d2 : CGVector, d3 : CGVector, d4 : CGVector)->CGMutablePathRef{
-        let nilvector = CGVector(dx:0, dy:0);
+    
         
         return GooeyLayer.circlePath(rect, curve: curve, vs: (
                 CGVector(dx:d1.dx, dy:d1.dy),
@@ -209,7 +193,7 @@ class GooeyLayer: CALayer{
 
     
     class func circlePath(rect : CGRect, curve : CGFloat, vs : Vectors) -> CGMutablePathRef{
-        var path = CGPathCreateMutable()
+        let path = CGPathCreateMutable()
         
         let x1 : CGFloat = ((rect.size.width)/2) + vs.0.dx     + rect.origin.x
         let y1 : CGFloat = (0 + vs.0.dy)                       + rect.origin.y

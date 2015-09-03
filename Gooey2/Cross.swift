@@ -35,7 +35,7 @@ class Cross: UIView {
         
         CGContextSetLineWidth(ctx, lineWidth)
         CGContextSetStrokeColorWithColor(ctx, UIColor.whiteColor().CGColor)
-        CGContextSetLineCap(ctx, kCGLineCapRound)
+        CGContextSetLineCap(ctx, CGLineCap.Round)
         CGContextAddPath(ctx, path)
         CGContextStrokePath(ctx)
         

@@ -89,7 +89,7 @@ class Gooey : UIView, GooeyItemDelegate{
                 return true
             }
         }
-        return true
+        return super.pointInside(point, withEvent: event)
     }
     
     func tapped(tapper : UITapGestureRecognizer){
@@ -118,13 +118,13 @@ class Gooey : UIView, GooeyItemDelegate{
         
         let angle = angles[items.count]
         let bridgeAngle = bridgeAngles[items.count]
-        var point = CGPoint(x: self.frame.size.width/2 - cos(angle) * 65, y: self.frame.size.height/2 - sin(angle) * 65)
+        let point = CGPoint(x: self.frame.size.width/2 - cos(angle) * 65, y: self.frame.size.height/2 - sin(angle) * 65)
         v.frame = CGRect(x: 0, y: 0, width: 60, height: 78)
         v.angle = bridgeAngle
         v.center = CGPoint(x: gooey.frame.origin.x + point.x, y: gooey.frame.origin.y + point.y)
         v.color = self.color
         v.delegate = self
-        v.imageView.image = UIImage(named: "p.png")
+        
         self.addSubview(v)
         items.append(v)
         
@@ -134,7 +134,7 @@ class Gooey : UIView, GooeyItemDelegate{
         
         for i in 0...items.count-1{
             let b = items[i]
-            let angle = angles[i]
+            
             let delay = duration * Double(i) + duration*2
             b.animateOpen(duration, delay: delay)
         }
@@ -151,7 +151,7 @@ class Gooey : UIView, GooeyItemDelegate{
         
         for i in 1...items.count {
             let b = items[items.count - i]
-            let angle = angles[angles.count - i]
+
             let delay = Double(i-1) * (duration) + duration/**1.5*/
             b.animateClose(duration, delay: delay)
         }

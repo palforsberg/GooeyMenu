@@ -10,7 +10,7 @@ import UIKit
 
 class BridgeLayer: CALayer {
 
-    override init!(layer: AnyObject!) {
+    override init(layer: AnyObject) {
         if layer is BridgeLayer{
             color = layer.color
             image = (layer as! BridgeLayer).image
@@ -21,7 +21,7 @@ class BridgeLayer: CALayer {
         self.contentsScale = UIScreen.mainScreen().scale
         self.anchorPoint = CGPoint(x: 0.5, y: 1.0)
     }
-    override init!() {
+    override init() {
         percent = closeValue
         super.init()
         
@@ -32,7 +32,7 @@ class BridgeLayer: CALayer {
         fatalError("init(coder:) has not been implemented")
     }
 
-    override class func needsDisplayForKey(key: String!) -> Bool {
+    override class func needsDisplayForKey(key: String) -> Bool {
         if (key == "percent") {
             return true
         }
@@ -82,14 +82,14 @@ class BridgeLayer: CALayer {
         self.addAnimation(a2, forKey: "percent2")
     }
     
-    override func animationDidStop(anim: CAAnimation!, finished flag: Bool) {
+    override func animationDidStop(anim: CAAnimation, finished flag: Bool) {
         self.removeAllAnimations()
         let a : CABasicAnimation = anim as! CABasicAnimation
         self.percent = a.toValue as! CGFloat
         
     }
     
-    override func drawInContext(ctx: CGContext!) {
+    override func drawInContext(ctx: CGContext) {
         
         let p = path == nil ? bridgePath() : path
         
@@ -120,7 +120,7 @@ class BridgeLayer: CALayer {
             //   p6    p3
             //p5__________p4
             let curve : CGFloat = 3
-            let curveInset : CGFloat = 0
+//            let curveInset : CGFloat = 0
             let p : CGFloat = percent
             let distCurvePoint     : CGFloat = 23 //Distance the middple point (p3, p6) should travel inwards.
             let travelCurvePoint   : CGFloat = distCurvePoint * p

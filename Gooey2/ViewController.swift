@@ -11,16 +11,17 @@ import UIKit
 class ViewController: UIViewController, GooeyDelegate {
     var gooey = Gooey(frame: CGRect(x: 100, y: 478, width: 120, height: 120))
     var durationLabel : UILabel = UILabel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-
+    
         gooey.color = UIColor(red: 29/255.0, green: 163/255, blue: 1, alpha: 1.0)
         gooey.delegate = self
+        gooey.items[0].imageView.image = UIImage(named: "p.png");
+        gooey.items[1].imageView.image = UIImage(named: "p.png");
+        gooey.items[2].imageView.image = UIImage(named: "p.png");
         self.view.addSubview(gooey)
     
-        
-//        let slider = UISlider(frame: CGRect(x: 20, y: 300, width: 280, height: 40))
         let slider = UISlider(frame: CGRect(x: 20, y: 300, width: 280, height: 40))
         slider.addTarget(self, action: "update:", forControlEvents: UIControlEvents.ValueChanged)
         self.view.addSubview(slider)
@@ -44,7 +45,7 @@ class ViewController: UIViewController, GooeyDelegate {
     }
     
     func gooeyDidSelectIndex(index: Int) {
-        println("Gooey did select index \(index)")
+        print("Gooey did select index \(index)")
     }
     
     override func didReceiveMemoryWarning() {
